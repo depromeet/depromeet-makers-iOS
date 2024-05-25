@@ -13,6 +13,9 @@
 		B68052482BFB71CB009E41D1 /* DerpomeetWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68052472BFB71CB009E41D1 /* DerpomeetWebView.swift */; };
 		B680524A2BFB71EA009E41D1 /* WebViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68052492BFB71EA009E41D1 /* WebViewPresentable.swift */; };
 		B680524D2BFB74DA009E41D1 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B680524C2BFB74DA009E41D1 /* Splash.storyboard */; };
+		B6BBEB712C021E6B00C1F141 /* WKWebView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBEB702C021E6B00C1F141 /* WKWebView+Ext.swift */; };
+		B6BBEB772C02224100C1F141 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBEB762C02224100C1F141 /* Bundle+Ext.swift */; };
+		B6BBEB792C0222A400C1F141 /* DepromeetWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BBEB782C0222A400C1F141 /* DepromeetWebViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,11 @@
 		B68052472BFB71CB009E41D1 /* DerpomeetWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerpomeetWebView.swift; sourceTree = "<group>"; };
 		B68052492BFB71EA009E41D1 /* WebViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPresentable.swift; sourceTree = "<group>"; };
 		B680524C2BFB74DA009E41D1 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		B6BBEB702C021E6B00C1F141 /* WKWebView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Ext.swift"; sourceTree = "<group>"; };
+		B6BBEB722C021F8500C1F141 /* SecretKey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SecretKey.xcconfig; sourceTree = "<group>"; };
+		B6BBEB752C0221BE00C1F141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6BBEB762C02224100C1F141 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
+		B6BBEB782C0222A400C1F141 /* DepromeetWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepromeetWebViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,14 @@
 		B68052372BFB714A009E41D1 /* DepromeetMakers */ = {
 			isa = PBXGroup;
 			children = (
+				B6BBEB752C0221BE00C1F141 /* Info.plist */,
+				B6BBEB6F2C021E2300C1F141 /* Extensions */,
 				B680524B2BFB74CE009E41D1 /* Splash */,
 				B68052462BFB71A9009E41D1 /* WebView */,
 				B68052382BFB714A009E41D1 /* DepromeetMakersApp.swift */,
 				B680523C2BFB714B009E41D1 /* Assets.xcassets */,
 				B680523E2BFB714B009E41D1 /* Preview Content */,
+				B6BBEB722C021F8500C1F141 /* SecretKey.xcconfig */,
 			);
 			path = DepromeetMakers;
 			sourceTree = "<group>";
@@ -77,6 +88,7 @@
 			children = (
 				B68052472BFB71CB009E41D1 /* DerpomeetWebView.swift */,
 				B68052492BFB71EA009E41D1 /* WebViewPresentable.swift */,
+				B6BBEB782C0222A400C1F141 /* DepromeetWebViewModel.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -87,6 +99,15 @@
 				B680524C2BFB74DA009E41D1 /* Splash.storyboard */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		B6BBEB6F2C021E2300C1F141 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6BBEB702C021E6B00C1F141 /* WKWebView+Ext.swift */,
+				B6BBEB762C02224100C1F141 /* Bundle+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B680524A2BFB71EA009E41D1 /* WebViewPresentable.swift in Sources */,
+				B6BBEB712C021E6B00C1F141 /* WKWebView+Ext.swift in Sources */,
+				B6BBEB772C02224100C1F141 /* Bundle+Ext.swift in Sources */,
+				B6BBEB792C0222A400C1F141 /* DepromeetWebViewModel.swift in Sources */,
 				B68052482BFB71CB009E41D1 /* DerpomeetWebView.swift in Sources */,
 				B68052392BFB714A009E41D1 /* DepromeetMakersApp.swift in Sources */,
 			);
@@ -290,6 +314,7 @@
 		};
 		B68052442BFB714B009E41D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BBEB722C021F8500C1F141 /* SecretKey.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +324,8 @@
 				DEVELOPMENT_TEAM = FUV2GHVQ46;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DepromeetMakers/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +347,7 @@
 		};
 		B68052452BFB714B009E41D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BBEB722C021F8500C1F141 /* SecretKey.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +357,8 @@
 				DEVELOPMENT_TEAM = FUV2GHVQ46;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DepromeetMakers/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

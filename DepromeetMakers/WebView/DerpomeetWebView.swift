@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct DerpomeetWebView: View {
+    @StateObject private var viewModel = DepromeetWebViewModel()
     var body: some View {
-//        NavigationStack {
-            WebViewPresentable(url: "https://depromeet-makers.dev")
-//        }
+        WebViewPresentable(url: viewModel.getWebViewUrl())
     }
 }
 
